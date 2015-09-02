@@ -61,3 +61,66 @@ small#headerSmall {
   
 }
 
+.slider {
+  float: right;
+  margin-right: 20px;
+}
+
+.runDiv {
+  box-shadow: inset 0 0 1em gray;
+
+  width: 820px;
+  height: 410px;
+  /*border: 1px solid black;*/
+  border-radius: 5px;
+
+}
+
+.chordImg {
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
+  width: 200px;
+  text-align: center;
+  margin-top: 80px;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+}
+
+#jogDial {
+  position: relative;
+  margin: 20px auto;
+  background: url(JogDial.js/jogDial.png);
+  background-size: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+#jogDial_knob {
+  position: absolute;
+  background: url(JogDial.js/jogDial_knob.png);
+  background-size: 100%;
+  width: 40px;
+  height:40px;
+}
+
+#jogDial_wheel {
+  width: 115px;
+  height: 115px;
+}
+
+.well {
+  position: relative;
+  width: 50px;
+  top: 0;
+  right: 0;
+
+}
+
+.jogDialContainer {
+  position: absolute;
+}
+
+
+

@@ -12,6 +12,7 @@
   
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-slider.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -59,11 +60,11 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu " aria-labelledby="progDropdown">
-              <li><a class="chords chord2">2</a></li>
-              <li><a class="chords chord3">3</a></li>
-              <li><a class="chords chord4">4</a></li>
-              <li><a class="chords chord5">5</a></li>
-              <li><a class="chords chord6">6</a></li>
+              <li><a class="chords chord2" data-val="2">2</a></li>
+              <li><a class="chords chord3" data-val="3">3</a></li>
+              <li><a class="chords chord4" data-val="4">4</a></li>
+              <li><a class="chords chord5" data-val="5">5</a></li>
+              <li><a class="chords chord6" data-val="6">6</a></li>
             </ul>
           </div>
         </div>
@@ -114,7 +115,7 @@
   
   <div class="hugeChordContainer col-xs-4">
     <!-- CHORD 1 ATTRIBUTES ROW -->
-    <div class="lgContainer1 hideEl">  
+    <div class="lgContainer lgContainer1 hideEl" data-div="1">  
       <div class="container-fluid buttonSize">
         <div class="row-fluid text-center">
           <div class="col-xs-3">
@@ -131,18 +132,18 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu key" aria-labelledby="keyDropdown1">
-                  <li><a href="" class="keySelect1">C</a></li>
-                  <li><a href="" class="keySelect1">C#/Db</a></li>
-                  <li><a href="" class="keySelect1">D</a></li>
-                  <li><a href="" class="keySelect1">D#/Eb</a></li>
-                  <li><a href="" class="keySelect1">E</a></li>
-                  <li><a href="" class="keySelect1">F</a></li>
-                  <li><a href="" class="keySelect1">F#/Gb</a></li>
-                  <li><a href="" class="keySelect1">G</a></li>
-                  <li><a href="" class="keySelect1">G#/Ab</a></li>
-                  <li><a href="" class="keySelect1">A</a></li>
-                  <li><a href="" class="keySelect1">A#/Bb</a></li>
-                  <li><a href="" class="keySelect1">B</a></li>
+                  <li><a href="" class="keySelect1 select">C</a></li>
+                  <li><a href="" class="keySelect1 select">C#/Db</a></li>
+                  <li><a href="" class="keySelect1 select">D</a></li>
+                  <li><a href="" class="keySelect1 select">D#/Eb</a></li>
+                  <li><a href="" class="keySelect1 select">E</a></li>
+                  <li><a href="" class="keySelect1 select">F</a></li>
+                  <li><a href="" class="keySelect1 select">F#/Gb</a></li>
+                  <li><a href="" class="keySelect1 select">G</a></li>
+                  <li><a href="" class="keySelect1 select">G#/Ab</a></li>
+                  <li><a href="" class="keySelect1 select">A</a></li>
+                  <li><a href="" class="keySelect1 select">A#/Bb</a></li>
+                  <li><a href="" class="keySelect1 select">B</a></li>
                 </ul>
               </div>
             </div>
@@ -155,14 +156,14 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="typeDropdown1">
-                  <li><a href="#">Major</a></li>
-                  <li><a href="#">minor</a></li>
-                  <li><a href="#">Major 7</a></li>
-                  <li><a href="#">minor 7</a></li>
-                  <li><a href="#">7</a></li>
-                  <li><a href="#">m7b5</a></li>
-                  <li><a href="#">augmented</a></li>
-                  <li><a href="#">diminished</a></li>
+                  <li><a href="" class="typeSelect1 select">Major</a></li>
+                  <li><a href="" class="typeSelect1 select">minor</a></li>
+                  <li><a href="" class="typeSelect1 select">Major 7</a></li>
+                  <li><a href="" class="typeSelect1 select">minor 7</a></li>
+                  <li><a href="" class="typeSelect1 select">7</a></li>
+                  <li><a href="" class="typeSelect1 select">m7b5</a></li>
+                  <li><a href="" class="typeSelect1 select">augmented</a></li>
+                  <li><a href="" class="typeSelect1 select">diminished</a></li>
                 </ul>
               </div>
             </div>
@@ -175,10 +176,10 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="shapeDropdown1">
-                  <li><a href="#">open</a></li>
-                  <li><a href="#">moveable 6th string root</a></li>
-                  <li><a href="#">moveable 5th string root</a></li>
-                  <li><a href="#">moveable 4th string root</a></li>
+                  <li><a href="" class="shapeSelect1 select">open</a></li>
+                  <li><a href="" class="shapeSelect1 select">6 root</a></li>
+                  <li><a href="" class="shapeSelect1 select">5 root</a></li>
+                  <li><a href="" class="shapeSelect1 select">4 root</a></li>
                 </ul>
               </div>
             </div>
@@ -189,14 +190,14 @@
 
       </div>  
 
+      <hr class="soften hrElement2 hideEl">
     </div> 
       
-    <hr class="soften hrElement2 hideEl">
 
     
 
     <!-- CHORD 2 ATTRIBUTES ROW -->
-    <div class="lgContainer2 hideEl">  
+    <div class="lgContainer lgContainer2 hideEl" data-div="2">  
       <div class="container-fluid buttonSize">
         <div class="row-fluid text-center">
           <div class="col-xs-3">
@@ -237,14 +238,14 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="typeDropdown2">
-                  <li><a href="#">Major</a></li>
-                  <li><a href="#">minor</a></li>
-                  <li><a href="#">Major 7</a></li>
-                  <li><a href="#">minor 7</a></li>
-                  <li><a href="#">7</a></li>
-                  <li><a href="#">m7b5</a></li>
-                  <li><a href="#">augmented</a></li>
-                  <li><a href="#">diminished</a></li>
+                  <li><a href="" class="typeSelect2">Major</a></li>
+                  <li><a href="" class="typeSelect2">minor</a></li>
+                  <li><a href="" class="typeSelect2">Major 7</a></li>
+                  <li><a href="" class="typeSelect2">minor 7</a></li>
+                  <li><a href="" class="typeSelect2">7</a></li>
+                  <li><a href="" class="typeSelect2">m7b5</a></li>
+                  <li><a href="" class="typeSelect2">augmented</a></li>
+                  <li><a href="" class="typeSelect2">diminished</a></li>
                 </ul>
               </div>
             </div>
@@ -257,10 +258,10 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="shapeDropdown2">
-                  <li><a href="#">open</a></li>
-                  <li><a href="#">moveable 6th string root</a></li>
-                  <li><a href="#">moveable 5th string root</a></li>
-                  <li><a href="#">moveable 4th string root</a></li>
+                  <li><a href="" class="shapeSelect2">open</a></li>
+                  <li><a href="" class="shapeSelect2 select">6 root</a></li>
+                  <li><a href="" class="shapeSelect2 select">5 root</a></li>
+                  <li><a href="" class="shapeSelect2 select">4 root</a></li>
                 </ul>
               </div>
             </div>
@@ -271,16 +272,16 @@
 
       </div>  
 
+      <hr class="soften hrElement3 hideEl">
     </div>
     
 
-    <hr class="soften hrElement3 hideEl">
 
 
     
 
     <!-- CHORD 3 ATTRIBUTES ROW -->
-    <div class="lgContainer3 hideEl">
+    <div class="lgContainer lgContainer3 hideEl" data-div="3">
       <div class="container-fluid buttonSize">
         <div class="row-fluid text-center">
           <div class="col-xs-3">
@@ -321,14 +322,14 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="typeDropdown3">
-                  <li><a href="#">Major</a></li>
-                  <li><a href="#">minor</a></li>
-                  <li><a href="#">Major 7</a></li>
-                  <li><a href="#">minor 7</a></li>
-                  <li><a href="#">7</a></li>
-                  <li><a href="#">m7b5</a></li>
-                  <li><a href="#">augmented</a></li>
-                  <li><a href="#">diminished</a></li>
+                  <li><a href="" class="typeSelect3">Major</a></li>
+                  <li><a href="" class="typeSelect3">minor</a></li>
+                  <li><a href="" class="typeSelect3">Major 7</a></li>
+                  <li><a href="" class="typeSelect3">minor 7</a></li>
+                  <li><a href="" class="typeSelect3">7</a></li>
+                  <li><a href="" class="typeSelect3">m7b5</a></li>
+                  <li><a href="" class="typeSelect3">augmented</a></li>
+                  <li><a href="" class="typeSelect3">diminished</a></li>
                 </ul>
               </div>
             </div>
@@ -341,10 +342,10 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="shapeDropdown3">
-                  <li><a href="#">open</a></li>
-                  <li><a href="#">moveable 6th string root</a></li>
-                  <li><a href="#">moveable 5th string root</a></li>
-                  <li><a href="#">moveable 4th string root</a></li>
+                  <li><a href="" class="shapeSelect3">open</a></li>
+                  <li><a href="" class="shapeSelect3 select">6 root</a></li>
+                  <li><a href="" class="shapeSelect3 select">5 root</a></li>
+                  <li><a href="" class="shapeSelect3 select">4 root</a></li>
                 </ul>
               </div>
             </div>
@@ -356,16 +357,16 @@
 
       </div>
 
+      <hr class="soften hrElement4 hideEl">
     </div>  
     
 
-    <hr class="soften hrElement4 hideEl">
     
 
     
 
     <!-- CHORD 4 ATTRIBUTES ROW -->
-    <div class="lgContainer4 hideEl">
+    <div class="lgContainer lgContainer4 hideEl" data-div="4">
       <div class="container-fluid buttonSize">
         <div class="row-fluid text-center">
           <div class="col-xs-3">
@@ -406,14 +407,14 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="typeDropdown4">
-                  <li><a href="#">Major</a></li>
-                  <li><a href="#">minor</a></li>
-                  <li><a href="#">Major 7</a></li>
-                  <li><a href="#">minor 7</a></li>
-                  <li><a href="#">7</a></li>
-                  <li><a href="#">m7b5</a></li>
-                  <li><a href="#">augmented</a></li>
-                  <li><a href="#">diminished</a></li>
+                  <li><a href="" class="typeSelect4">Major</a></li>
+                  <li><a href="" class="typeSelect4">minor</a></li>
+                  <li><a href="" class="typeSelect4">Major 7</a></li>
+                  <li><a href="" class="typeSelect4">minor 7</a></li>
+                  <li><a href="" class="typeSelect4">7</a></li>
+                  <li><a href="" class="typeSelect4">m7b5</a></li>
+                  <li><a href="" class="typeSelect4">augmented</a></li>
+                  <li><a href="" class="typeSelect4">diminished</a></li>
                 </ul>
               </div>
             </div>
@@ -426,10 +427,10 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="shapeDropdown4">
-                  <li><a href="#">open</a></li>
-                  <li><a href="#">moveable 6th string root</a></li>
-                  <li><a href="#">moveable 5th string root</a></li>
-                  <li><a href="#">moveable 4th string root</a></li>
+                  <li><a href="" class="shapeSelect4">open</a></li>
+                  <li><a href="" class="shapeSelect4 select">6 root</a></li>
+                  <li><a href="" class="shapeSelect4 select">5 root</a></li>
+                  <li><a href="" class="shapeSelect4 select">4 root</a></li>
                 </ul>
               </div>
             </div>
@@ -441,13 +442,13 @@
 
       </div> 
 
+      <hr class="soften hrElement5 hideEl">
     </div>
 
-    <hr class="soften hrElement5 hideEl">
 
 
     <!-- CHORD 5 ATTRIBUTES ROW -->
-    <div class="lgContainer5 hideEl">
+    <div class="lgContainer lgContainer5 hideEl" data-div="5">
       <div class="container-fluid buttonSize">
         <div class="row-fluid text-center">
           <div class="col-xs-3">
@@ -488,14 +489,14 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="typeDropdown5">
-                  <li><a href="#">Major</a></li>
-                  <li><a href="#">minor</a></li>
-                  <li><a href="#">Major 7</a></li>
-                  <li><a href="#">minor 7</a></li>
-                  <li><a href="#">7</a></li>
-                  <li><a href="#">m7b5</a></li>
-                  <li><a href="#">augmented</a></li>
-                  <li><a href="#">diminished</a></li>
+                  <li><a href="" class="typeSelect5">Major</a></li>
+                  <li><a href="" class="typeSelect5">minor</a></li>
+                  <li><a href="" class="typeSelect5">Major 7</a></li>
+                  <li><a href="" class="typeSelect5">minor 7</a></li>
+                  <li><a href="" class="typeSelect5">7</a></li>
+                  <li><a href="" class="typeSelect5">m7b5</a></li>
+                  <li><a href="" class="typeSelect5">augmented</a></li>
+                  <li><a href="" class="typeSelect5">diminished</a></li>
                 </ul>
               </div>
             </div>
@@ -508,10 +509,10 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="shapeDropdown5">
-                  <li><a href="#">open</a></li>
-                  <li><a href="#">moveable 6th string root</a></li>
-                  <li><a href="#">moveable 5th string root</a></li>
-                  <li><a href="#">moveable 4th string root</a></li>
+                  <li><a href="" class="shapeSelect5">open</a></li>
+                  <li><a href="" class="shapeSelect5 select">6 root</a></li>
+                  <li><a href="" class="shapeSelect5 select">5 root</a></li>
+                  <li><a href="" class="shapeSelect5 select">4 root</a></li>
                 </ul>
               </div>
             </div>
@@ -523,13 +524,13 @@
 
       </div> 
 
+      <hr class="soften hrElement6 hideEl">
     </div>
 
-    <hr class="soften hrElement6 hideEl">
     
 
     <!-- CHORD 6 ATTRIBUTES ROW -->
-    <div class="lgContainer6 hideEl">
+    <div class="lgContainer lgContainer6 hideEl" data-div="6">
       <div class="container-fluid buttonSize">
         <div class="row-fluid text-center">
           <div class="col-xs-3">
@@ -570,14 +571,14 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="typeDropdown6">
-                  <li><a href="#">Major</a></li>
-                  <li><a href="#">minor</a></li>
-                  <li><a href="#">Major 7</a></li>
-                  <li><a href="#">minor 7</a></li>
-                  <li><a href="#">7</a></li>
-                  <li><a href="#">m7b5</a></li>
-                  <li><a href="#">augmented</a></li>
-                  <li><a href="#">diminished</a></li>
+                  <li><a href="" class="typeSelect6">Major</a></li>
+                  <li><a href="" class="typeSelect6">minor</a></li>
+                  <li><a href="" class="typeSelect6">Major 7</a></li>
+                  <li><a href="" class="typeSelect6">minor 7</a></li>
+                  <li><a href="" class="typeSelect6">7</a></li>
+                  <li><a href="" class="typeSelect6">m7b5</a></li>
+                  <li><a href="" class="typeSelect6">augmented</a></li>
+                  <li><a href="" class="typeSelect6">diminished</a></li>
                 </ul>
               </div>
             </div>
@@ -590,10 +591,10 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="shapeDropdown6">
-                  <li><a href="#">open</a></li>
-                  <li><a href="#">moveable 6th string root</a></li>
-                  <li><a href="#">moveable 5th string root</a></li>
-                  <li><a href="#">moveable 4th string root</a></li>
+                  <li><a href="" class="shapeSelect6">open</a></li>
+                  <li><a href="" class="shapeSelect6 select">6 root</a></li>
+                  <li><a href="" class="shapeSelect6 select">5 root</a></li>
+                  <li><a href="" class="shapeSelect6 select">4 root</a></li>
                 </ul>
               </div>
             </div>
@@ -610,16 +611,48 @@
   </div>
 
   <div class="container-fluid col-xs-8 runDiv">
-    <div class="col-xs-8">
-      HEY
-      <input id="ex4" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="-3" data-slider-orientation="vertical"/>
+    <!-- <div class="well well-lg"> -->
+    <!-- <div class="col-xs-8"> -->
+      <!-- <span class="helper"> -->
+      <!-- <div class="chordImg"> -->
+        
+        
+      <!-- </div> -->
+      <!-- </span> -->
+    <div class="row-fluid">
+      
+      <div class="col-xs-4">
+      </div>
+      
+      <div class="col-xs-4">
+        
+        <img src="assets/A-m-4.png" alt="" class="chordImg">
+        
+      </div> 
+      
+      <div class="col-xs-4 jogDialContainer">
+        
+        <div id="jogDial">
+           
+        </div>
+      
+          <div class="well">
+            
+            <div class="bpm"></div>
+          
+          </div>
+      </div>
 
     </div>
+      <!-- <input id="ex4" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="-3" data-slider-orientation="vertical" class="slider"/> -->
+    <!-- </div> -->
+    <!-- </div> -->
   </div>
   <br>
   <br>
   <br>
-
+  
+  <script type="text/javascript" src="JogDial.js/jogDial.js"></script>
   <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
