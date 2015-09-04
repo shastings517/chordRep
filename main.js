@@ -369,6 +369,7 @@ $(function(){
   //BEAT COUNTER FOR DETERMINING HOW MANY TIMES A CHORD IS SHOWN
   var beatCounter = 0;
   var chordCounter = 0;
+  var progCounter = 0;
 
   var metronomeTick = function() {
        
@@ -382,13 +383,43 @@ $(function(){
           $("img.chordImg").attr("src", "assets/" + chordArr[0] + ".png");
           $("img.chordImgNext").attr("src", "assets/" + chordArr[chordCounter + 1] + ".png");
           chordArr.push(chordArr.shift());
-          // chordCounter++;
+
+          switch(progCounter){
+            case 0: 
+              $(".appHeader").css("border", "");
+              $(".appHeader .first").css("border", "1px solid #9F1212");
+              break;
+            case 1:
+              $(".appHeader .first").css("border", "");
+              $(".appHeader .second").css("border", "1px solid #9F1212");
+              break;
+            case 2:
+              $(".appHeader .second").css("border", "");
+              $(".appHeader .third").css("border", "1px solid #9F1212");
+              break;
+            case 3:
+              $(".appHeader .third").css("border", "");
+              $(".appHeader .fourth").css("border", "1px solid #9F1212");
+              break;
+            case 4:
+              $(".appHeader .fourth").css("border", "");
+              $(".appHeader .fifth").css("border", "1px solid #9F1212");
+              break;
+            case 5:
+              $(".appHeader .fifth").css("border", "");
+              $(".appHeader .sixth").css("border", "1px solid #9F1212");
+              break;
+            default:
+              $("appHeader").css("border", "");
+          }
+          progCounter++;
           // chordCounter = chordCounter % (chordArr.length);
           // if(chordCounter === chordArr.length){
           //   chordCounter = 0;
           // }
           console.log(chordCounter);
         }
+        
         beatCounter++;
       });
   };
@@ -425,6 +456,7 @@ $(function(){
   var chord4; 
   var chord5; 
   var chord6;
+  
 
   //CHORD1 SELECT
   $(".select1").on("click", function(){
@@ -545,8 +577,8 @@ $(function(){
       }
 
       if($(".appHeader .second")) $(".appHeader .second").remove();
-      var progressionLabel2 = " - " + key2 + type2;
-      $("h1.progression").append("<span class='second'>" + progressionLabel2 + "</span>");
+      var progressionLabel2 = key2 + type2;
+      $("h1.progression").append("<span class='second'>" + " - " + progressionLabel2 + "</span>");
 
       chord2 = key2 + type2 + shape2;
 
