@@ -107,7 +107,7 @@ $(function(){
 
   $("a.keySelect5").on("click", function(e){
     e.preventDefault();
-    $("button#keyDropdown5").text($(this).text());
+    $("button#keyDropdown5").text($(this).text()); //THIS.PARENT.~ USE DOM PATH TO SELECT
   });
 
   $("a.keySelect6").on("click", function(e){
@@ -211,7 +211,7 @@ $(function(){
   // var chordMenu = $("a.chords").attr("data-val");
 
 
-
+  //fadeInNext function recursion`
 
   $("a.chord2").click(function(e) {
     e.preventDefault();
@@ -384,35 +384,36 @@ $(function(){
           $("img.chordImgNext").attr("src", "assets/" + chordArr[chordCounter + 1] + ".png");
           chordArr.push(chordArr.shift());
 
-          switch(progCounter){
-            case 0: 
-              $(".appHeader").css("border", "");
-              $(".appHeader .first").css("border", "1px solid #9F1212");
-              break;
-            case 1:
-              $(".appHeader .first").css("border", "");
-              $(".appHeader .second").css("border", "1px solid #9F1212");
-              break;
-            case 2:
-              $(".appHeader .second").css("border", "");
-              $(".appHeader .third").css("border", "1px solid #9F1212");
-              break;
-            case 3:
-              $(".appHeader .third").css("border", "");
-              $(".appHeader .fourth").css("border", "1px solid #9F1212");
-              break;
-            case 4:
-              $(".appHeader .fourth").css("border", "");
-              $(".appHeader .fifth").css("border", "1px solid #9F1212");
-              break;
-            case 5:
-              $(".appHeader .fifth").css("border", "");
-              $(".appHeader .sixth").css("border", "1px solid #9F1212");
-              break;
-            default:
-              $("appHeader").css("border", "");
-          }
-          progCounter++;
+          // switch(progCounter){
+          //   case 0: 
+          //     $(".appHeader").css("border", "");
+          //     $(".appHeader .first").css("border", "1px solid #9F1212");
+          //     break;
+          //   case 1:
+          //     $(".appHeader .first").css("border", "");
+          //     $(".appHeader .second").css("border", "1px solid #9F1212");
+          //     break;
+          //   case 2:
+          //     $(".appHeader .second").css("border", "");
+          //     $(".appHeader .third").css("border", "1px solid #9F1212");
+          //     break;
+          //   case 3:
+          //     $(".appHeader .third").css("border", "");
+          //     $(".appHeader .fourth").css("border", "1px solid #9F1212");
+          //     break;
+          //   case 4:
+          //     $(".appHeader .fourth").css("border", "");
+          //     $(".appHeader .fifth").css("border", "1px solid #9F1212");
+          //     break;
+          //   case 5:
+          //     $(".appHeader .fifth").css("border", "");
+          //     $(".appHeader .sixth").css("border", "1px solid #9F1212");
+          //     break;
+          //   default:
+          //     $("appHeader").css("border", "");
+          //     progCounter = 0;
+          // }
+          // progCounter++;
           // chordCounter = chordCounter % (chordArr.length);
           // if(chordCounter === chordArr.length){
           //   chordCounter = 0;
