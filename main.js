@@ -56,6 +56,8 @@ $(function(){
         //     return this.defaultSelected;
         // });
 
+        $("button#keyDropdown"+data-val) 
+
         $("button#keyDropdown1").html(defaultKeyHTML);
         $("button#keyDropdown2").html(defaultKeyHTML);
         $("button#keyDropdown3").html(defaultKeyHTML);
