@@ -56,7 +56,7 @@ $(function(){
         //     return this.defaultSelected;
         // });
 
-        $("button#keyDropdown"+data-val) 
+        // $("button#keyDropdown"+data-val) 
 
         $("button#keyDropdown1").html(defaultKeyHTML);
         $("button#keyDropdown2").html(defaultKeyHTML);
@@ -215,7 +215,7 @@ $(function(){
 
   //fadeInNext function recursion`
 
-  $("a.chord2").click(function(e) {
+  $("a#chord2").click(function(e) {
     e.preventDefault();
     //hide chord elements before redisplay
     $(".hideEl").hide();
@@ -230,7 +230,7 @@ $(function(){
     chordArr = ["",""];
   });
   
-  $("a.chord3").click(function(e) {
+  $("a#chord3").click(function(e) {
     
     e.preventDefault();
       //hide chord elements before redisplay 
@@ -248,7 +248,7 @@ $(function(){
     });
   
 
-  $("a.chord4").click(function(e) {
+  $("a#chord4").click(function(e) {
     e.preventDefault();
     //hide chord elements before redisplay 
     
@@ -268,7 +268,7 @@ $(function(){
     chordArr = ["","","",""];
   });
 
-  $("a.chord5").click(function(e) {
+  $("a#chord5").click(function(e) {
     e.preventDefault();
     //hide chord elements before redisplay 
     $(".hideEl").hide();
@@ -289,7 +289,7 @@ $(function(){
     chordArr = ["","","","",""];
   });
 
-  $("a.chord6").click(function(e) {
+  $("a#chord6").click(function(e) {
     e.preventDefault();
     //hide chord elements before redisplay 
     $(".hideEl").hide();
